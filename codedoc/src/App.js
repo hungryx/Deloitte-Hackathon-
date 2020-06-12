@@ -12,13 +12,40 @@ function App() {
       <Router>
         <NavigationBar />
         <div className="App">
-          <Welcome />
-          <Calendar />
+          <Switch>
+            <Route exact path="/">
+              <WelcomePage />
+            </Route>
+            {/* <Route path="/profile">
+              <Profile />
+            </Route> */}
+            <Route path="/calendar">
+              <CalendarPage />
+            </Route>
+        </Switch>
         </div>
       </Router>
     </React.Fragment>
     
   );
+}
+
+function WelcomePage() {
+    return (
+        <Welcome />
+    );
+}
+
+// function Profile() {
+//     return (
+//         <Profile />
+//     );
+// }
+  
+function CalendarPage() {
+    return (
+        <Calendar />
+    );
 }
 
 export default App;
