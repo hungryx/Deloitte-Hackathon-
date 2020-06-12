@@ -5,12 +5,12 @@ import styled from 'styled-components';
 const Styles = styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
-    color: #9FFFCB;
+    color: #0f62fe;
     &:hover { color: white; }
   }
   .navbar-brand {
     font-size: 1.4em;
-    color: #9FFFCB;
+    color: #0f62fe;
     &:hover { color: white; }
   }
   .form-center {
@@ -22,12 +22,9 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="light" expand="lg">
       <Navbar.Brand href="/">CODEDOC</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Form className="form-center">
-        <FormControl type="text" placeholder="Search a symptom" className="" />
-      </Form>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item><Nav.Link href="/">PROFILE</Nav.Link></Nav.Item> 
