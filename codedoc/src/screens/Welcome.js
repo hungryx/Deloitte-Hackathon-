@@ -10,6 +10,7 @@ export const Welcome = ({ name = 'John' }) => {
   ]
 
   const medication = [
+    { label: 'Amlodipine', value: 'Amlodipine' },
     { label: 'Amoxicillin', value: 'Amoxicillin' },
     { label: 'Penicillin', value: 'Penicillin' },
   ]
