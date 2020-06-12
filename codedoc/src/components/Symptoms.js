@@ -20,11 +20,25 @@ export const Symptoms = ({ symptoms }) => {
             <Toggler label={symptom.label} color='#CD5C5C' />
           )
         })}
+        <div style={{ padding: 8 }}>
 
         <CreatableSelect
+          
           isMulti
+          styles={{
+            control: (provided) => ({
+              ...provided,
+              borderRadius: 8
+            }),
+            placeholder: (provided) => ({
+              ...provided,
+              fontSize: 12
+            })
+          }}
+          placeholder='Additional symptoms...'
           options={options}
         />
+        </div>
 
       </div>
       <div style={{ marginTop: 24 }}>
