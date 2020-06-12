@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Symptoms, Medication } from '../components'
-export const Welcome = ({ name = 'Marcus' }) => {      
+export const Welcome = ({ name = 'John' }) => {      
   const symptoms = [
     { label: 'Headache', value: 'Headache' },
     { label: 'Sore Throat', value: 'Sore Throat' },
