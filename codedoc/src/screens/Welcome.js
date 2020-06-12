@@ -12,7 +12,6 @@ export const Welcome = ({ name = 'John' }) => {
   const medication = [
     { label: 'Amoxicillin', value: 'Amoxicillin' },
     { label: 'Penicillin', value: 'Penicillin' },
-    { label: 'Add New Medication', value: 'Add New Medication' }
   ]
   return (
     <div style={{
