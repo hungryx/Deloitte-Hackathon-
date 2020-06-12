@@ -9,7 +9,7 @@ export const Symptoms = ({ symptoms }) => {
       <div style={{ marginTop: 12 }}>
         {symptoms.map(symptom => {
           return (
-            <Toggler label={symptom.label} />
+            <Toggler label={symptom.label} color='#CD5C5C' />
           )
         })}
       </div>
