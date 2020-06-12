@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FormGroup, TextArea } from 'carbon-components-react'
 import { Toggler } from './Components'
-
+import { Button } from 'carbon-components-react'
 
 export const Symptoms = ({ symptoms }) => {
   return (
@@ -23,6 +23,18 @@ export const Symptoms = ({ symptoms }) => {
             }}
             placeholder="Today I felt..."
           />
+          <div style={{ padding: 10 }}></div>
+          
+          <Button style={{ 
+              margin: 8,
+              borderRadius: 8,
+              position: 'absolute',
+              right: 32,
+            }} 
+            variant="primary" 
+            type="submit">
+            Submit
+          </Button>
         </FormGroup>
       </div>
     </div>

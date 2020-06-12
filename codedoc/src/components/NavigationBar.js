@@ -5,13 +5,15 @@ import styled from 'styled-components';
 const Styles = styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
+    transition: all ease 0.2s;
     color: #0f62fe;
-    &:hover { color: white; }
+    &:hover { color: #4a89ff; }
   }
   .navbar-brand {
     font-size: 1.4em;
+    transition: all ease 0.2s;
     color: #0f62fe;
-    &:hover { color: white; }
+    &:hover { color: #4a89ff; }
   }
   .form-center {
     position: absolute !important;

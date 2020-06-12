@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Symptoms, Medication } from '../components'
-export const Welcome = ({ name = 'Marcus' }) => {
+export const Welcome = ({ name = 'Marcus' }) => {      
   const symptoms = [
-    { label: 'headache', value: 'headache' },
-    { label: 'fatigue', value: 'fatigue' },
-    { label: 'stomachache', value: 'stomachache' },
-    { label: 'nausea', value: 'nausea' },
-    { label: 'bloating', value: 'bloating' }
+    { label: 'Headache', value: 'Headache' },
+    { label: 'Fatigue', value: 'Fatigue' },
+    { label: 'Stomachache', value: 'Stomachache' },
+    { label: 'Nausea', value: 'Nausea' },
+    { label: 'Bloating', value: 'Bloating' }
   ]
 
   const medication = [
