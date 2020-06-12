@@ -23,7 +23,16 @@ export const Medication = ({ medication }) => {
       <h4>Have you taken your daily medication?</h4>
       <div style={{
         display: 'flex',
-        overflow: 'scroll'
+        overflowX: 'scroll',
+        '&::-webkit-scrollbar': {
+          width: 10
+        },
+        '&::-webkit-scrollbar-track': {
+          background: '#f1f1f1'
+        },
+        '&::-webkit-scrollbar-thumb': {
+          background: '#ffc222'
+        }
       }}>
         {notifications.map(notif => (
           <ToastNotification
