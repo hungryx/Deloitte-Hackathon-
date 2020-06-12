@@ -24,15 +24,9 @@ export const Medication = ({ medication }) => {
       <div style={{
         display: 'flex',
         overflowX: 'scroll',
-        '&::-webkit-scrollbar': {
-          width: 10
-        },
-        '&::-webkit-scrollbar-track': {
-          background: '#f1f1f1'
-        },
-        '&::-webkit-scrollbar-thumb': {
-          background: '#ffc222'
-        }
+        scrollbarWidth: 10,
+        scrollbarTrackColor: '#f1f1f1',
+        msScrollbarBaseColor: '#ffc222'
       }}>
         {notifications.map(notif => (
           <ToastNotification
