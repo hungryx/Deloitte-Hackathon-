@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
-import { FormGroup, TextArea } from 'carbon-components-react'
+import React, { useState, Component } from 'react'
+import { FormGroup, TextArea, TextInput } from 'carbon-components-react'
 import { Toggler } from './Components'
 import { Button } from 'carbon-components-react'
+import Select from 'react-select'
+import CreatableSelect from 'react-select/creatable';
 
 export const Symptoms = ({ symptoms }) => {
+  const options = [
+    { value: 'constipation', label: 'Constipation' },
+    { value: 'backache', label: 'Backache' },
+    { value: 'stomach cramps', label: 'Stomach cramps' }
+  ]
   return (
     <div style={{ marginTop: 24 }}>
       <h4>Did you have any of these symptoms today?</h4>
@@ -13,6 +20,12 @@ export const Symptoms = ({ symptoms }) => {
             <Toggler label={symptom.label} color='#CD5C5C' />
           )
         })}
+
+        <CreatableSelect
+          isMulti
+          options={options}
+        />
+
       </div>
       <div style={{ marginTop: 24 }}>
         <h4>Additional Notes</h4>
