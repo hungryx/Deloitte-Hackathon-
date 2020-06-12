@@ -5,13 +5,15 @@ import styled from 'styled-components';
 const Styles = styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
+    transition: all ease 0.2s;
     color: #0f62fe;
-    &:hover { color: white; }
+    &:hover { color: #4a89ff; }
   }
   .navbar-brand {
     font-size: 1.4em;
+    transition: all ease 0.2s;
     color: #0f62fe;
-    &:hover { color: white; }
+    &:hover { color: #4a89ff; }
   }
   .form-center {
     position: absolute !important;
@@ -27,8 +29,8 @@ export const NavigationBar = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Item><Nav.Link href="/">PROFILE</Nav.Link></Nav.Item> 
-          <Nav.Item><Nav.Link href="/about">CALENDAR</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/profile">PROFILE</Nav.Link></Nav.Item> 
+          <Nav.Item><Nav.Link href="/calendar">CALENDAR</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
