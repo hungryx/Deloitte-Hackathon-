@@ -23,7 +23,10 @@ export const Medication = ({ medication }) => {
       <h4>Have you taken your daily medication?</h4>
       <div style={{
         display: 'flex',
-        overflow: 'scroll'
+        overflowX: 'scroll',
+        scrollbarWidth: 10,
+        scrollbarTrackColor: '#f1f1f1',
+        msScrollbarBaseColor: '#ffc222'
       }}>
         {notifications.map(notif => (
           <ToastNotification
