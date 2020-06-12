@@ -6,15 +6,15 @@ import { ToastNotification } from 'carbon-components-react'
 export const Medication = ({ medication }) => {
   const notifications = [
     {
-      title: `You have 1 week's worth of Atorvastatin left.`,
+      title: `You have 1 week's worth of Amoxicillin left.`,
       caption: `Don't forget to visit your pharmacy.`
     },
     {
-      title: `You have 1 prescription left for Rosuvastatin.`,
+      title: `You have 1 prescription left for Amoxicillin.`,
       caption: `Visit your GP to renew your precsriptions.`
     },
     {
-      title: `You have 1 week's worth of Perindopril left.`,
+      title: `You have 1 week's worth of Penicillin left.`,
       caption: `Don't forget to visit your pharmacy.`
     }
   ]

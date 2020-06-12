@@ -1,20 +1,18 @@
 import React, { useState } from 'react'
 import { Symptoms, Medication } from '../components'
-export const Welcome = ({ name = 'Marcus' }) => {      
+export const Welcome = ({ name = 'John' }) => {      
   const symptoms = [
     { label: 'Headache', value: 'Headache' },
-    { label: 'Fatigue', value: 'Fatigue' },
-    { label: 'Stomachache', value: 'Stomachache' },
-    { label: 'Nausea', value: 'Nausea' },
-    { label: 'Bloating', value: 'Bloating' }
+    { label: 'Sore Throat', value: 'Sore Throat' },
+    { label: 'Fever', value: 'Fever' },
+    { label: 'Coughing', value: 'Coughing' },
+    { label: 'Rashes', value: 'Rashes' }
   ]
 
   const medication = [
-    { label: 'Atorvastatin', value: 'Atorvastatin' },
-    { label: 'Rosuvastatin', value: 'Rosuvastatin' },
-    { label: 'Perindopril', value: 'Perindopril' },
     { label: 'Amlodipine', value: 'Amlodipine' },
-    { label: 'Irbesartan', value: 'Irbesartan' }
+    { label: 'Amoxicillin', value: 'Amoxicillin' },
+    { label: 'Penicillin', value: 'Penicillin' },
   ]
   return (
     <div style={{

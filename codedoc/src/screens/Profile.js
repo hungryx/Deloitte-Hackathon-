@@ -28,12 +28,12 @@ export const Profile = ({ name = 'John Doe' }) => {
               <br /> Phone: 0400 000 001</body>   
           <br />
           <h4>MEDICAL HISTORY</h4>
-            <body> 2006 - current: high blood pressure 
-              <br /> 2014: hernia removal surgery 
+            <body> 2006 - Present: High Blood Pressure 
+              <br /> 2014: Hernia Removal Surgery 
             </body>
           <br />
           <h4>CURRENT MEDICATION</h4>
-            <body> 2006 - current: Amlodipine
+            <body> 2006 - Present: Amlodipine
             </body>
             <br />
           <h4>DOCTOR CONTACT DETAILS</h4>
