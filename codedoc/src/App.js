@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import 'carbon-components/css/carbon-components.min.css'
-import { Welcome, Calendar } from './screens'
+import { Welcome, Calendar, Profile } from './screens'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
@@ -16,9 +16,9 @@ function App() {
             <Route exact path="/">
               <WelcomePage />
             </Route>
-            {/* <Route path="/profile">
-              <Profile />
-            </Route> */}
+            <Route path="/profile">
+              <ProfilePage />
+            </Route> 
             <Route path="/calendar">
               <CalendarPage />
             </Route>
@@ -36,11 +36,11 @@ function WelcomePage() {
     );
 }
 
-// function Profile() {
-//     return (
-//         <Profile />
-//     );
-// }
+function ProfilePage() {
+    return (
+        <Profile />
+    );
+}
   
 function CalendarPage() {
     return (
