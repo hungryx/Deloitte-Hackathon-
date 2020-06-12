@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import 'carbon-components/css/carbon-components.min.css'
 import { Welcome } from './screens'
 
 function App() {
